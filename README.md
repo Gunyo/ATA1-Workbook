@@ -92,19 +92,21 @@ During a compiling scanrio The entire program source code is converted first bef
 #### Q8.
 ##### "Explain control flow, using an example from the Ruby programming language"
 
-`print "enter a number: "`
-`num = gets.chomp`
-`num =  num.to_i;`
+```ruby
+"enter a number: "
+num = gets.chomp
+num =  num.to_i;
  
-`if num == 5`
- ` print "number is 5"`
-`elsif num == 10`
-  `print "number is 10"`
-`elsif num == 11`
-  `print "number is 11"`
-`else`
-  `print "number is something other than 5, 10, or 11"`
-`end`
+if num == 5
+  print "number is 5"
+elsif num == 10
+  print "number is 10"
+elsif num == 11
+  print "number is 11"
+else
+  print "number is something other than 5, 10, or 11"
+end
+```
 
 In this code an elsif statement is placed between if and else statements, to allow any other additional statements to occur. The control flow of this program starts with the user inputting any number which than converts into an integer to be executed with the correct output. the code will read from top to bottom within the if statement until the else. It starts to check if the inputted number is 5 than proceeds to check "elseif" the number is either a 10 or 11. anyone of these numbers are inputted it will show the corresponding message for each statement. With "else" any other number that is not within the statement will print the corresponding message to that statement and the program will end. 
 <br>
@@ -148,9 +150,80 @@ Here's an example:
  - Identify the classes you would use to solve the problem
  - Write a short explanation of why you would use the classes you have identified
  
-##### Restaurant Class:
-##### 1. Attributes
-- 
+The following Classes are:
+
+- **cousine_type**
+  - Cousine type is the first step to identify what type of dish the customer wants.
+- **gluten_free**
+  - Addition to cousin_type, customers are informed if its gluten free.
+- **vegan_friendly**
+  - Addition to cousin_type, customers are informed if its vegan free
+- **price**
+  - This will track the price for each meal the customer orders.
+- **table_number**
+  - This totals up the price for the specific table to pay for their meal.
+<br>
+
+### Q12.
+##### "Identify and explain the error in the code snippet below that is preventing correct execution of the program."
+
+![Q12 Code Snippet](img/Q12.png)
+
+1. The program does not identify as an integer.
+2. N/A
+3. The program will not print any conversion.
+4. It does not know what to print because there are no code injecting to make the calculation.
+5. N/A
+
+  - `puts "enter a temperature in celsius to convert into fahrenheit: "`
+  - Allows user to input desire number to convert into fahrenheit.
+`celsius = gets.chomp.to_i`
+  - Identify the input as an integer.
+`fahrenheit = (celsius * 9 / 5) + 32`
+  - converts input into fahrenheit.
+`puts "The result is: #{fahrenheit}"`
+  - prints the output.
+<br>
+
+### Q13.
+##### "The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly."
+
+![Q13 Code Snippet](img/Q13.png)
+
+```ruby
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+j = 1
+while (i < arr.size - 1)
+    j=i+1
+    while(j<arr.size-1)
+        if(arr[i]>arr[j])
+            arr[i], arr[j] = arr[j], arr[i] unless i.nil?
+        end
+        j=j + 1
+    end
+  i = i + 1
+end
+puts "#{arr}"
+```
+<br>
+
+### Q14.
+##### "Demonstrate your algorithmic thinking through completing the following two tasks, in order:"
+1. Create a flowchart to outline the steps for listing all prime      numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+2. Write pseudocode for the process outlined in your flowchart
+
+
+
+
+
+
+
+  
+
+
+
+
 
  
 
