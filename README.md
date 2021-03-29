@@ -68,7 +68,7 @@ During a compiling scanrio The entire program source code is converted first bef
 
 #### Q6.
 ##### "Identify TWO commonly used programming languages and explain the benefits and drawbacks of each."
-- **Javascript** - The only programming language than can be understood by a web browser. Therefore most popular application seen today are built on Javascript, hence the reason Javascrip is the most popular programming language. It is also known to create most of the mobile application which Javascript ties into directly to a mobile device Application Programming Interface (API) used to control the camera, accelerometer and etc. Javascript is also a versatile programming language, that can be used both front-end and back-end development. However, there are drawbacks such as that it cannot create Database Application since it cannot connect the Website to the database. Another major issue is that Since the JavaScript code is visible to the user, it may be used maliciously by others. Using the source code without authentication is one of these practises. Furthermore, it is very simple to insert code into the site that violates the protection of data transmitted over the internet. 
+- **Javascript** - The only programming language than can be understood by a web browser. Therefore most popular application seen today are built on Javascript, hence the reason Javascript is the most popular programming language. It is also known to create most of the mobile application which Javascript ties into directly to a mobile device Application Programming Interface (API) used to control the camera, accelerometer and etc. Javascript is also a versatile programming language, that can be used both front-end and back-end development. However, there are drawbacks such as that it cannot create Database Application since it cannot connect the Website to the database. Another major issue is that Since the JavaScript code is visible to the user, it may be used maliciously by others. Using the source code without authentication is one of these practises. Furthermore, it is very simple to insert code into the site that violates the protection of data transmitted over the internet. 
 - **Python** - A Major benefit when using Python is Enterprise Application Integration. It simplifies the creation of web development services by invoking CORBA or COM components and calling Java, C++, or C code directly. It implements common internet data formats and protocols, as well as processing markup languages like XL, and runs from the same byte code on modern operating systems. It can also be embedded as a scripting language. It is also used for Portability and interactivity, many say it is easy to learn as it provides Rapid prototyping capabilities and dynamic semantics. The drawbacks to using Python is the speed. Pace, or the lack thereof, may be a significant problem. Python is slower than other compiled languages since it is an interpreted language. Unlike Javascript, Python lacks mobile computing and browser supportability. 
 <br>
 
@@ -106,7 +106,7 @@ During a compiling scanrio The entire program source code is converted first bef
   `print "number is something other than 5, 10, or 11"`
 `end`
 
-In this code an elsif statement is placed between if and else statements, to allow any other additional statements to occur. The control flow of this program starts with the user inputting any number which than converts into an intergergy to be executed with the correct output. the code will read from top to bottom within the if statement until the else. It starts to check if the inputted number is 5 than proceeds to check "elseif" the number is either a 10 or 11. anyone of these numbers are inputted it will show the corresponding message for each statement. With "else" any other number that is not within the statement will print the corresponding message to that statement and the program will end. 
+In this code an elsif statement is placed between if and else statements, to allow any other additional statements to occur. The control flow of this program starts with the user inputting any number which than converts into an integer to be executed with the correct output. the code will read from top to bottom within the if statement until the else. It starts to check if the inputted number is 5 than proceeds to check "elseif" the number is either a 10 or 11. anyone of these numbers are inputted it will show the corresponding message for each statement. With "else" any other number that is not within the statement will print the corresponding message to that statement and the program will end. 
 <br>
 
 ### Q9.
@@ -114,18 +114,45 @@ In this code an elsif statement is placed between if and else statements, to all
 Type coercion is The transformation of an object's class and value into another type while holding its value. 
 An example can be seen in the following:
 
-`:foo.to_s # => "foo"` - converting to a string
-`10.0.to_i # => 10` - converting into an integer 
-`"10".to_i # => 10` - converting into an integer 
+`:foo.to_s # => "foo"` - converts to a string
+`10.0.to_i # => 10` - converts into an integer 
+`"10".to_i # => 10` - converts into an integer 
 
 
 this done whenever a distinction between objects of different types is made, or when an operation or evaluation is performed on variables of different types.
 <br>
 
 ### Q10.
-##### "	Explain data types, using examples"
+##### "Explain data types, using examples"
 
+Text, series, numbers, and other data types are all represented as data types in Ruby. All of Ruby's supported data types are implemented as classes since it is an object-oriented language.
+Here's an example:
+`puts "Hello World!"` - Strings represented by "quotation marks"
+`my_int = 34`         - Numbers (Integer) represented by "_int"
+`my_flt = 3.142`      - Numbers (float) represented by "_flt"
 
+- Integers and floats are the two main kinds of numbers
+
+`true` & `false` - Booleans represented by either "true" or "false" 
+`[1, 2, 3, 4]` - Arrays represented by "[]"
+`{`
+  `"Apple" => 1,`
+  `"banana " => 1`
+`}` - Hash a data structure that stores key-value pairs, represented by "=>".
+`my_symbols = {:ap => "Apple", :bn => "Banana", :mg => "Mango"}` - Symbols represented by ":"
+-  this method is commonly used instead of string to increase performance. 
+<br>
+
+### Q11.
+##### "Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
+ - Identify the classes you would use to solve the problem
+ - Write a short explanation of why you would use the classes you have identified
+ 
+##### Restaurant Class:
+##### 1. Attributes
+- 
+
+ 
 
 
 
