@@ -89,6 +89,28 @@ During a compiling scanrio The entire program source code is converted first bef
 ###### Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
 <br>
 
+##### Ethical issue 1: Access to a user’s personal information
+
+The IT professional is responsible for ensuring that only approved users have access to privileged information when creating an application. Which people and organizations have access to which data must be determined during the project's planning process.
+
+To figure out who can have access to what information, an example would be of a electronic health records. A patient would only allow access to their own health records unlike the doctor who can access to others given the profession. Another example would be banking details. An individual can only access to their own personal detail and for bankers, when given authorization by its owner, they too can access during both parties agreement.  
+
+##### Source of legal info: The Office of the Australian Information Commissioner https://www.oaic.gov.au/. 
+
+The Office of the Australian Information Commissioner (OAIC) is the central authority for privacy and freedom of information, upholding the Privacy Act1988, the Freedom of Information Act1982, and the Australian Information Commissioner Act 2010.
+
+Up to an extent, the statute is beneficial in assisting a developer in acting ethically. However, whether or not anything is legal is a lower threshold than whether or not it is ethical. Since IT is such a fast-growing region, official legal enactment is likely to lag behind ethics, so laws should not be used strictly as a guide for actions. Tenancy information, for example, is protected by the law, and a real estate agent can only obtain certain types of information and reveal it under certain circumstances.
+
+##### Ethical issue 2: intellectual property, copyright, and acknowledgement.
+
+Intellectual property is becoming more harder to keep. As the internet grows and more people create new ideas and publish it on the World Wide Web, it can be rather difficult to establish your own work. As an IT profession, even though codes are an open source environment. Their work are made sure that it is not blatantly copying another web application or a mobile application. However, It is still possible to use the same idea and concepts as their competitors. 
+
+##### Source of legal info: *IP Laws Amendment Bill 2014* and the *IP Laws Amendment Act 2015*
+
+
+
+<br>
+
 #### Q8.
 ##### "Explain control flow, using an example from the Ruby programming language"
 
@@ -152,16 +174,20 @@ Here's an example:
  
 The following Classes are:
 
-- **cousine_type**
-  - Cousine type is the first step to identify what type of dish the customer wants.
-- **gluten_free**
-  - Addition to cousin_type, customers are informed if its gluten free.
-- **vegan_friendly**
-  - Addition to cousin_type, customers are informed if its vegan free
-- **price**
-  - This will track the price for each meal the customer orders.
-- **table_number**
-  - This totals up the price for the specific table to pay for their meal.
+- **Restaurant_Order**
+  - To specify the available food that are present during the time at the restaurant.
+  - Determine how many of each food item are available.
+  - When an item is pulled out, update.
+  - Update current item availability when restocked. 
+- **Restaurant_Display**
+  - ‘greeting’ to welcome the user to the restaurant
+  - ‘menu’ to inform the user what food is available
+  - ‘what_would_you_like_to_order’ to print to the screen a request for user input and return their response
+  - ‘wrong_answer’ to handle any unexpected inputs
+  - ‘confirmation’ to allow the user to review their order
+  - ‘thank_you’ to thank the person for dining at the restaurant
+- **Restaurant_System**
+  - The logic of the programme will be included in the controller. This would include greeting the user, calling the method that asks the user for feedback, taking the user's input and answering with the appropriate method from Restaurant_Display (either displaying the menu or calling another method asking what they want to order), and calling the methods from Restaurant_Order to update the stock of food items (either in response to an order that would decrease the stock or in response to an order that would increase the stock).
 <br>
 
 ### Q12.
@@ -212,6 +238,57 @@ puts "#{arr}"
 ##### "Demonstrate your algorithmic thinking through completing the following two tasks, in order:"
 1. Create a flowchart to outline the steps for listing all prime      numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
 2. Write pseudocode for the process outlined in your flowchart
+
+![flowchart](img/flowchart.png)
+
+##### Pseudocode
+- The rationale of the solution is that for each number ‘n' between 1 and 100 (inclusive), all prime numbers less than n/2 must be tested (that is, verified whether it is divisible).
+- Because if a number is divisible by a number, it is also divisible by factors of that number, prime numbers may be verified rather than all numbers. If a number is divisible by 3, we don't need to check whether it's divisible by 6, 9, 12, or other factors because if it's divisible by those numbers, it's divisible by all factors of those numbers.
+- Since any number greater than half the value of n can never be a factor of n, only primes less than half the value of n must be verified.
+
+##### Flow Control
+
+1.	Initialize variable:
+    - The value tested determine if they are prime: n = 1
+    - The array of primes which will use to test n again. At the start it is an array with the number 2 in it.
+
+2.	The task was to only find prime numbers less than or equal to 100 therefore, <=100, else end the program.
+
+3.	Check if n is divisible by the following number equal to a prime number, then it is not a prime number.
+
+4.	If n is not divisible by the prime, we check if the array's next prime is n/2. If that's the case, check to see if n is divisible by the next prime (back to step 3).
+
+5.	If the next prime in the array is not n/2 or does not exist, then n is a prime number. push the number into the list afterwards. 
+
+6.	Keep adding 1 to n to see if its <= 100, repeating back to step 2.
+
+7.	If n is greater than 100, End program.
+<br>
+
+### Q15.
+##### "Write pseudocode OR Ruby code for the following problem:"
+You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
+
+```Ruby
+raining = false
+temperature = 16
+
+if raining == true
+    if temperature < 15
+        puts("It's wet and cold")
+    else
+        puts("It's warm and raining")
+    end
+elsif raining == false
+    if temperature < 15
+        puts("It's not raining but cold")
+    else
+        puts("It's warm but not raining")
+    end
+else
+    puts("Invalid input")
+end
+```
 
 
 
